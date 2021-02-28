@@ -1,0 +1,8 @@
+name,R1
+lib1-cell,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/*_R1_*.fastq.gz
+lib1-egg,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4pooledegg/*_R1_*.fastq.gz
+lib2-cell,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5mock/*_R1_*.fastq.gz
+lib2-egg,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/*_R1_*.fastq.gz
+lib3-cell,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/*_R1_*.fastq.gz
+lib3-egg,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6pooledegg/*_R1_*.fastq.gz
+wt,/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/*_R1_*.fastq.gz

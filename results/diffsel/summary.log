@@ -1,0 +1,47 @@
+2019-08-15 13:21:06,731 - INFO - Beginning execution of dms2_batch_diffsel in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-15 13:21:06,731 - INFO - Progress is being logged to ./results/diffsel/summary.log
+2019-08-15 13:21:06,739 - INFO - Version information:
+	Time and date: Thu Aug 15 13:21:06 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.dev1
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-15 13:21:06,739 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel/
+	ncpus = 4
+	use_existing = yes
+	indir = None
+	chartype = codon_to_aa
+	excludestop = yes
+	pseudocount = 5
+	mincount = 0
+	batchfile = ./results/diffsel/batch.csv
+	summaryprefix = summary
+
+2019-08-15 13:21:06,739 - INFO - Parsing info from ./results/diffsel/batch.csv
+2019-08-15 13:21:06,752 - INFO - Read the following sample information:
+name,mock,sel,err
+lib1,./results/renumbered_codoncounts/lib1-cell_codoncounts.csv,./results/renumbered_codoncounts/lib1-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv
+lib2,./results/renumbered_codoncounts/lib2-cell_codoncounts.csv,./results/renumbered_codoncounts/lib2-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv
+lib3,./results/renumbered_codoncounts/lib3-cell_codoncounts.csv,./results/renumbered_codoncounts/lib3-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv
+
+
+2019-08-15 13:21:06,767 - INFO - Output summary files already exist and '--use_existing' is 'yes', so exiting with no further action.

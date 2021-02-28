@@ -1,0 +1,129 @@
+2019-08-01 09:05:13,500 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 09:05:13,501 - INFO - Progress is being logged to ./results/codoncounts/lib1-cell.log
+2019-08-01 09:05:13,506 - INFO - Version information:
+	Time and date: Thu Aug  1 09:05:13 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 09:05:13,506 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts/
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/Perth09_HA_reference.fa
+	alignspecs = ['1,285,38,40', '286,567,33,34', '568,852,34,30', '853,1137,34,31', '1138,1422,36,29', '1423,1701,39,44']
+	bclen = 8
+	fastqdir = None
+	R2 = None
+	R1trim = [200]
+	R2trim = [165]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = lib1-cell
+	R1 = ['/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/*_R1_*.fastq.gz']
+
+2019-08-01 09:05:13,868 - INFO - Read refseq of 1701 codons from ./data/Perth09_HA_reference.fa
+2019-08-01 09:05:13,876 - INFO - Reads are in these FASTQ pairs:
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R1_001.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R2_001.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R1_002.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R2_002.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R1_003.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L4mock/L4mock_GATAGACA_L001_R2_003.fastq.gz
+
+2019-08-01 09:05:13,877 - INFO - Now parsing read pairs...
+2019-08-01 09:05:27,543 - INFO - Reads parsed so far: 500000
+2019-08-01 09:05:39,149 - INFO - Reads parsed so far: 1000000
+2019-08-01 09:05:49,963 - INFO - Reads parsed so far: 1500000
+2019-08-01 09:06:02,150 - INFO - Reads parsed so far: 2000000
+2019-08-01 09:06:12,893 - INFO - Reads parsed so far: 2500000
+2019-08-01 09:06:23,408 - INFO - Reads parsed so far: 3000000
+2019-08-01 09:06:34,429 - INFO - Reads parsed so far: 3500000
+2019-08-01 09:06:47,258 - INFO - Reads parsed so far: 4000000
+2019-08-01 09:06:58,605 - INFO - Reads parsed so far: 4500000
+2019-08-01 09:07:08,851 - INFO - Reads parsed so far: 5000000
+2019-08-01 09:07:19,067 - INFO - Reads parsed so far: 5500000
+2019-08-01 09:07:29,279 - INFO - Reads parsed so far: 6000000
+2019-08-01 09:07:39,001 - INFO - Reads parsed so far: 6500000
+2019-08-01 09:07:49,297 - INFO - Reads parsed so far: 7000000
+2019-08-01 09:07:59,225 - INFO - Reads parsed so far: 7500000
+2019-08-01 09:08:09,059 - INFO - Reads parsed so far: 8000000
+2019-08-01 09:08:09,936 - INFO - Parsed 8038100 reads, found 1169106 unique barcodes.
+2019-08-01 09:08:09,943 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 8038100       126116         509948
+2019-08-01 09:08:09,943 - INFO - Writing these stats to ./results/codoncounts/lib1-cell_readstats.csv
+
+2019-08-01 09:08:10,452 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            128983
+2                             46178
+3                             72565
+4                            101704
+5                            126303
+6                            138762
+7                            136003
+8                            120979
+9                             97772
+10                            73331
+11                            50718
+12                            32530
+13                            19802
+14                            11258
+15                             5986
+16                             3100
+17                             1613
+18                              780
+19                              359
+20                              191
+21                               91
+22                               46
+23                               21
+24                                8
+25                               11
+26                                5
+27                                4
+28                                1
+30                                1
+31                                1
+2019-08-01 09:08:10,452 - INFO - Writing these stats to ./results/codoncounts/lib1-cell_readsperbc.csv
+
+2019-08-01 09:08:10,457 - INFO - Examining the 1169106 barcodes to build and align subamplicons...
+2019-08-01 09:08:27,667 - INFO - Barcodes examined so far: 200000
+2019-08-01 09:08:43,323 - INFO - Barcodes examined so far: 400000
+2019-08-01 09:08:57,398 - INFO - Barcodes examined so far: 600000
+2019-08-01 09:09:11,046 - INFO - Barcodes examined so far: 800000
+2019-08-01 09:09:23,276 - INFO - Barcodes examined so far: 1000000
+2019-08-01 09:09:28,900 - INFO - Examined all barcodes. Summary stats:
+   total  too few reads  not alignable  aligned
+ 1169106         128983          75385   964738
+2019-08-01 09:09:28,900 - INFO - Writing these stats to ./results/codoncounts/lib1-cell_bcstats.csv
+
+2019-08-01 09:09:28,932 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/lib1-cell_codoncounts.csv
+
+2019-08-01 09:09:28,979 - INFO - Successful completion of dms2_bcsubamp

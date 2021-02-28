@@ -1,0 +1,118 @@
+2019-08-01 09:05:13,499 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 09:05:13,499 - INFO - Progress is being logged to ./results/codoncounts/lib2-egg.log
+2019-08-01 09:05:13,506 - INFO - Version information:
+	Time and date: Thu Aug  1 09:05:13 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 09:05:13,506 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts/
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/Perth09_HA_reference.fa
+	alignspecs = ['1,285,38,40', '286,567,33,34', '568,852,34,30', '853,1137,34,31', '1138,1422,36,29', '1423,1701,39,44']
+	bclen = 8
+	fastqdir = None
+	R2 = None
+	R1trim = [200]
+	R2trim = [165]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = lib2-egg
+	R1 = ['/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/*_R1_*.fastq.gz']
+
+2019-08-01 09:05:13,868 - INFO - Read refseq of 1701 codons from ./data/Perth09_HA_reference.fa
+2019-08-01 09:05:13,877 - INFO - Reads are in these FASTQ pairs:
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/L5pooledegg_CAAGACTA_L001_R1_001.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/L5pooledegg_CAAGACTA_L001_R2_001.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/L5pooledegg_CAAGACTA_L001_R1_002.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L5pooledegg/L5pooledegg_CAAGACTA_L001_R2_002.fastq.gz
+
+2019-08-01 09:05:13,877 - INFO - Now parsing read pairs...
+2019-08-01 09:05:25,290 - INFO - Reads parsed so far: 500000
+2019-08-01 09:05:35,198 - INFO - Reads parsed so far: 1000000
+2019-08-01 09:05:44,885 - INFO - Reads parsed so far: 1500000
+2019-08-01 09:05:54,903 - INFO - Reads parsed so far: 2000000
+2019-08-01 09:06:04,169 - INFO - Reads parsed so far: 2500000
+2019-08-01 09:06:13,433 - INFO - Reads parsed so far: 3000000
+2019-08-01 09:06:24,178 - INFO - Reads parsed so far: 3500000
+2019-08-01 09:06:34,212 - INFO - Reads parsed so far: 4000000
+2019-08-01 09:06:43,879 - INFO - Reads parsed so far: 4500000
+2019-08-01 09:06:53,355 - INFO - Reads parsed so far: 5000000
+2019-08-01 09:07:03,362 - INFO - Reads parsed so far: 5500000
+2019-08-01 09:07:11,741 - INFO - Parsed 5914232 reads, found 1560802 unique barcodes.
+2019-08-01 09:07:11,755 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 5914232        88744         362565
+2019-08-01 09:07:11,755 - INFO - Writing these stats to ./results/codoncounts/lib2-egg_readstats.csv
+
+2019-08-01 09:07:12,358 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            361006
+2                            230071
+3                            262949
+4                            242647
+5                            188285
+6                            126375
+7                             74562
+8                             40128
+9                             19341
+10                             8837
+11                             3872
+12                             1642
+13                              626
+14                              259
+15                              113
+16                               49
+17                               18
+18                                9
+19                                5
+20                                5
+21                                1
+22                                1
+23                                1
+2019-08-01 09:07:12,359 - INFO - Writing these stats to ./results/codoncounts/lib2-egg_readsperbc.csv
+
+2019-08-01 09:07:12,364 - INFO - Examining the 1560802 barcodes to build and align subamplicons...
+2019-08-01 09:07:25,302 - INFO - Barcodes examined so far: 200000
+2019-08-01 09:07:37,958 - INFO - Barcodes examined so far: 400000
+2019-08-01 09:07:50,019 - INFO - Barcodes examined so far: 600000
+2019-08-01 09:08:01,755 - INFO - Barcodes examined so far: 800000
+2019-08-01 09:08:12,484 - INFO - Barcodes examined so far: 1000000
+2019-08-01 09:08:22,400 - INFO - Barcodes examined so far: 1200000
+2019-08-01 09:08:29,935 - INFO - Barcodes examined so far: 1400000
+2019-08-01 09:08:32,894 - INFO - Examined all barcodes. Summary stats:
+   total  too few reads  not alignable  aligned
+ 1560802         361006         104268  1095528
+2019-08-01 09:08:32,895 - INFO - Writing these stats to ./results/codoncounts/lib2-egg_bcstats.csv
+
+2019-08-01 09:08:32,937 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/lib2-egg_codoncounts.csv
+
+2019-08-01 09:08:32,976 - INFO - Successful completion of dms2_bcsubamp

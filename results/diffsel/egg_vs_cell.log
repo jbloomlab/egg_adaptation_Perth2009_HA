@@ -1,0 +1,64 @@
+2019-08-01 10:13:37,147 - INFO - Beginning execution of dms2_logoplot in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 10:13:37,147 - INFO - Progress is being logged to ./results/diffsel/egg_vs_cell.log
+2019-08-01 10:13:37,154 - INFO - Version information:
+	Time and date: Thu Aug  1 10:13:37 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 10:13:37,155 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel/
+	ncpus = -1
+	use_existing = no
+	prefs = None
+	diffsel = ./results/diffsel/summary__meanmutdiffsel.csv
+	fracsurvive = None
+	diffprefs = None
+	muteffects = None
+	name = egg_vs_cell
+	nperline = 100
+	numberevery = 10
+	excludestop = no
+	stringency = 1
+	restrictdiffsel = positive
+	diffselrange = None
+	muteffectrange = None
+	fracsurvivemax = None
+	sortsites = yes
+	mapmetric = functionalgroup
+	colormap = jet
+	overlay1 = None
+	overlay2 = None
+	overlay3 = None
+	underlay = no
+	scalebar = None
+	overlaycolormap = jet
+	letterheight = 1
+	ignore_extracols = no
+	sepline = yes
+
+2019-08-01 10:13:37,157 - ERROR - Terminating dms2_logoplot with ERROR.
+Traceback (most recent call last):
+  File "/home/jbloom/dms_tools2/scripts/dms2_logoplot", line 106, in main
+    assert dms_tools2.parseargs.checkName(args['name'], 'name')
+  File "/home/jbloom/dms_tools2/dms_tools2/parseargs.py", line 58, in checkName
+    "{2}".format(nametype, name, ', '.join(illegal_chars)))
+ValueError: name egg_vs_cell contains following illegal characters: _, _

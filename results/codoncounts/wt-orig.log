@@ -1,0 +1,138 @@
+2019-08-01 09:09:43,814 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 09:09:43,814 - INFO - Progress is being logged to ./results/codoncounts/wt-orig.log
+2019-08-01 09:09:43,822 - INFO - Version information:
+	Time and date: Thu Aug  1 09:09:43 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 09:09:43,823 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts/
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/Perth09_HA_reference.fa
+	alignspecs = ['1,285,38,40', '286,567,33,34', '568,852,34,30', '853,1137,34,31', '1138,1422,36,29', '1423,1701,39,44']
+	bclen = 8
+	fastqdir = None
+	R2 = None
+	R1trim = [200]
+	R2trim = [165]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = wt-orig
+	R1 = ['/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/*_R1_*.fastq.gz']
+
+2019-08-01 09:09:43,848 - INFO - Read refseq of 1701 codons from ./data/Perth09_HA_reference.fa
+2019-08-01 09:09:43,852 - INFO - Reads are in these FASTQ pairs:
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R1_001.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R2_001.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R1_002.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R2_002.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R1_003.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_WTplasmid/WTplasmid_GCTAACGA_L001_R2_003.fastq.gz
+
+2019-08-01 09:09:43,852 - INFO - Now parsing read pairs...
+2019-08-01 09:09:55,615 - INFO - Reads parsed so far: 500000
+2019-08-01 09:10:05,802 - INFO - Reads parsed so far: 1000000
+2019-08-01 09:10:16,340 - INFO - Reads parsed so far: 1500000
+2019-08-01 09:10:25,575 - INFO - Reads parsed so far: 2000000
+2019-08-01 09:10:34,769 - INFO - Reads parsed so far: 2500000
+2019-08-01 09:10:44,043 - INFO - Reads parsed so far: 3000000
+2019-08-01 09:10:54,732 - INFO - Reads parsed so far: 3500000
+2019-08-01 09:11:04,412 - INFO - Reads parsed so far: 4000000
+2019-08-01 09:11:14,059 - INFO - Reads parsed so far: 4500000
+2019-08-01 09:11:23,367 - INFO - Reads parsed so far: 5000000
+2019-08-01 09:11:32,423 - INFO - Reads parsed so far: 5500000
+2019-08-01 09:11:42,021 - INFO - Reads parsed so far: 6000000
+2019-08-01 09:11:51,536 - INFO - Reads parsed so far: 6500000
+2019-08-01 09:12:01,293 - INFO - Reads parsed so far: 7000000
+2019-08-01 09:12:11,117 - INFO - Reads parsed so far: 7500000
+2019-08-01 09:12:20,435 - INFO - Reads parsed so far: 8000000
+2019-08-01 09:12:30,065 - INFO - Reads parsed so far: 8500000
+2019-08-01 09:12:39,463 - INFO - Reads parsed so far: 9000000
+2019-08-01 09:12:40,476 - INFO - Parsed 9054814 reads, found 924627 unique barcodes.
+2019-08-01 09:12:40,482 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 9054814       140874         604768
+2019-08-01 09:12:40,482 - INFO - Writing these stats to ./results/codoncounts/wt-orig_readstats.csv
+
+2019-08-01 09:12:40,788 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                             95111
+2                             13975
+3                             19809
+4                             28991
+5                             40712
+6                             54574
+7                             68659
+8                             79548
+9                             85272
+10                            86579
+11                            81047
+12                            70654
+13                            58642
+14                            45101
+15                            33389
+16                            23361
+17                            15317
+18                            10049
+19                             6020
+20                             3472
+21                             2004
+22                             1039
+23                              590
+24                              313
+25                              164
+26                               85
+27                               64
+28                               22
+29                               23
+30                               16
+31                                8
+32                                5
+33                                6
+34                                1
+35                                1
+36                                2
+39                                1
+43                                1
+2019-08-01 09:12:40,789 - INFO - Writing these stats to ./results/codoncounts/wt-orig_readsperbc.csv
+
+2019-08-01 09:12:40,793 - INFO - Examining the 924627 barcodes to build and align subamplicons...
+2019-08-01 09:12:55,275 - INFO - Barcodes examined so far: 200000
+2019-08-01 09:13:09,420 - INFO - Barcodes examined so far: 400000
+2019-08-01 09:13:23,773 - INFO - Barcodes examined so far: 600000
+2019-08-01 09:13:36,963 - INFO - Barcodes examined so far: 800000
+2019-08-01 09:13:40,550 - INFO - Examined all barcodes. Summary stats:
+  total  too few reads  not alignable  aligned
+ 924627          95111          47160   782356
+2019-08-01 09:13:40,550 - INFO - Writing these stats to ./results/codoncounts/wt-orig_bcstats.csv
+
+2019-08-01 09:13:40,593 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/wt-orig_codoncounts.csv
+
+2019-08-01 09:13:40,645 - INFO - Successful completion of dms2_bcsubamp

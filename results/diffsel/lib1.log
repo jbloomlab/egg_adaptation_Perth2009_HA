@@ -1,0 +1,74 @@
+2019-08-01 09:57:10,461 - INFO - Beginning execution of dms2_diffsel in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 09:57:10,461 - INFO - Progress is being logged to ./results/diffsel/lib1.log
+2019-08-01 09:57:10,470 - INFO - Version information:
+	Time and date: Thu Aug  1 09:57:10 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 09:57:10,471 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel/
+	ncpus = 1
+	use_existing = yes
+	indir = None
+	chartype = codon_to_aa
+	excludestop = yes
+	pseudocount = 5.0
+	mincount = 0
+	name = lib1
+	sel = ./results/renumbered_codoncounts/lib1-egg_codoncounts.csv
+	mock = ./results/renumbered_codoncounts/lib1-cell_codoncounts.csv
+	err = ./results/renumbered_codoncounts/wt_codoncounts.csv
+
+2019-08-01 09:57:10,473 - INFO - Reading selected sample counts from ./results/renumbered_codoncounts/lib1-egg_codoncounts.csv
+2019-08-01 09:57:10,490 - INFO - Reading mock-selected sample counts from ./results/renumbered_codoncounts/lib1-cell_codoncounts.csv
+2019-08-01 09:57:10,502 - INFO - Reading error-control sample counts from ./results/renumbered_codoncounts/wt_codoncounts.csv
+2019-08-01 09:57:10,519 - INFO - Computing mutdiffsel...
+2019-08-01 09:57:19,019 - INFO - Mutations with largest mutdiffsel:
+     site wildtype mutation  mutdiffsel
+ (HA2)153        R        T        7.04
+      279        S        T        4.14
+ (HA2)162        Y        H        3.91
+      216        N        R        3.86
+ (HA2)200        V        R        3.64
+      121        N        K        3.56
+  (HA2)46        D        T        3.48
+ (HA2)158        D        N        3.39
+      310        K        V        3.38
+      300        I        N        3.38
+
+2019-08-01 09:57:19,020 - INFO - Writing to ./results/diffsel/lib1_mutdiffsel.csv
+2019-08-01 09:57:19,060 - INFO - Computing sitediffsel...
+2019-08-01 09:57:19,104 - INFO - Sites with largest absolute sitediffsel:
+     site  abs_diffsel  positive_diffsel  negative_diffsel  max_diffsel  min_diffsel
+      -16        57.61              0.00            -57.61         0.00        -5.85
+      222        34.84              0.03            -34.80         0.03        -4.44
+      189        28.92              0.55            -28.37         0.33        -4.04
+      160        27.32              0.52            -26.80         0.52        -5.16
+  (HA2)57        26.68              4.69            -21.99         3.31        -4.00
+ (HA2)199        26.04              5.02            -21.02         1.96        -4.96
+ (HA2)141        25.17              3.26            -21.91         3.26        -4.18
+ (HA2)153        24.13             17.00             -7.13         7.04        -2.47
+      220        23.95              2.53            -21.42         1.78        -4.66
+ (HA2)208        22.98              9.59            -13.39         1.83        -3.82
+
+2019-08-01 09:57:19,104 - INFO - Writing to ./results/diffsel/lib1_sitediffsel.csv
+2019-08-01 09:57:19,121 - INFO - Successful completion of dms2_diffsel

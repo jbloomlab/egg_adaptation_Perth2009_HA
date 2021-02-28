@@ -1,0 +1,4 @@
+name,mock,sel,err
+lib1,./results/renumbered_codoncounts/lib1-cell_codoncounts.csv,./results/renumbered_codoncounts/lib1-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv
+lib2,./results/renumbered_codoncounts/lib2-cell_codoncounts.csv,./results/renumbered_codoncounts/lib2-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv
+lib3,./results/renumbered_codoncounts/lib3-cell_codoncounts.csv,./results/renumbered_codoncounts/lib3-egg_codoncounts.csv,./results/renumbered_codoncounts/wt_codoncounts.csv

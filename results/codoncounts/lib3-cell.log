@@ -1,0 +1,122 @@
+2019-08-01 09:08:49,532 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/jbloom/2019/egg_adaptation_Perth2009_HA
+
+2019-08-01 09:08:49,532 - INFO - Progress is being logged to ./results/codoncounts/lib3-cell.log
+2019-08-01 09:08:49,543 - INFO - Version information:
+	Time and date: Thu Aug  1 09:08:49 2019
+	Platform: Linux-3.13.0-165-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.7 | packaged by conda-forge | (default, Feb 28 2019, 09:07:38)  [GCC 7.3.0]
+	dms_tools2 version: 2.5.0
+	Bio version: 1.73
+	HTSeq version: 0.11.2
+	pandas version: 0.25.0
+	numpy version: 1.16.4
+	IPython version: 7.6.1
+	jupyter version: 1.0.0
+	matplotlib version: 3.1.1
+	plotnine version: 0.5.1
+	natsort version: 6.0.0
+	pystan version: 2.16.0.0
+	scipy version: 1.2.2
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.3
+	statsmodels version: 0.10.0
+	rpy2 version: 2.9.4
+	regex version: 2.5.33
+	umi_tools version: 1.0.0
+
+2019-08-01 09:08:49,543 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts/
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/Perth09_HA_reference.fa
+	alignspecs = ['1,285,38,40', '286,567,33,34', '568,852,34,30', '853,1137,34,31', '1138,1422,36,29', '1423,1701,39,44']
+	bclen = 8
+	fastqdir = None
+	R2 = None
+	R1trim = [200]
+	R2trim = [165]
+	bclen2 = None
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	sitemask = None
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = lib3-cell
+	R1 = ['/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/*_R1_*.fastq.gz']
+
+2019-08-01 09:08:49,579 - INFO - Read refseq of 1701 codons from ./data/Perth09_HA_reference.fa
+2019-08-01 09:08:49,582 - INFO - Reads are in these FASTQ pairs:
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/L6mock_GCGAGTAA_L001_R1_001.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/L6mock_GCGAGTAA_L001_R2_001.fastq.gz
+	/fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/L6mock_GCGAGTAA_L001_R1_002.fastq.gz and /fh/fast/bloom_j/SR/ngs/illumina/reguia/190725_D00300_0788_AH3JCJBCX3_lane1/Unaligned/Project_reguia/Sample_L6mock/L6mock_GCGAGTAA_L001_R2_002.fastq.gz
+
+2019-08-01 09:08:49,582 - INFO - Now parsing read pairs...
+2019-08-01 09:09:00,925 - INFO - Reads parsed so far: 500000
+2019-08-01 09:09:12,001 - INFO - Reads parsed so far: 1000000
+2019-08-01 09:09:22,872 - INFO - Reads parsed so far: 1500000
+2019-08-01 09:09:33,759 - INFO - Reads parsed so far: 2000000
+2019-08-01 09:09:44,196 - INFO - Reads parsed so far: 2500000
+2019-08-01 09:09:54,067 - INFO - Reads parsed so far: 3000000
+2019-08-01 09:10:06,202 - INFO - Reads parsed so far: 3500000
+2019-08-01 09:10:16,398 - INFO - Reads parsed so far: 4000000
+2019-08-01 09:10:26,773 - INFO - Reads parsed so far: 4500000
+2019-08-01 09:10:36,785 - INFO - Reads parsed so far: 5000000
+2019-08-01 09:10:47,646 - INFO - Reads parsed so far: 5500000
+2019-08-01 09:10:58,032 - INFO - Reads parsed so far: 6000000
+2019-08-01 09:11:08,048 - INFO - Reads parsed so far: 6500000
+2019-08-01 09:11:11,206 - INFO - Parsed 6654554 reads, found 1163553 unique barcodes.
+2019-08-01 09:11:11,213 - INFO - Summary stats on reads:
+   total  fail filter  low Q barcode
+ 6654554       100355         479399
+2019-08-01 09:11:11,213 - INFO - Writing these stats to ./results/codoncounts/lib3-cell_readstats.csv
+
+2019-08-01 09:11:12,379 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            146131
+2                             79648
+3                            117039
+4                            147351
+5                            158013
+6                            147874
+7                            123504
+8                             92684
+9                             63932
+10                            39383
+11                            23041
+12                            12489
+13                             6521
+14                             3202
+15                             1505
+16                              684
+17                              288
+18                              144
+19                               65
+20                               27
+21                               13
+22                                8
+23                                1
+24                                2
+25                                2
+26                                1
+27                                1
+2019-08-01 09:11:12,380 - INFO - Writing these stats to ./results/codoncounts/lib3-cell_readsperbc.csv
+
+2019-08-01 09:11:12,390 - INFO - Examining the 1163553 barcodes to build and align subamplicons...
+2019-08-01 09:11:29,919 - INFO - Barcodes examined so far: 200000
+2019-08-01 09:11:43,454 - INFO - Barcodes examined so far: 400000
+2019-08-01 09:11:56,679 - INFO - Barcodes examined so far: 600000
+2019-08-01 09:12:09,944 - INFO - Barcodes examined so far: 800000
+2019-08-01 09:12:21,709 - INFO - Barcodes examined so far: 1000000
+2019-08-01 09:12:27,027 - INFO - Examined all barcodes. Summary stats:
+   total  too few reads  not alignable  aligned
+ 1163553         146131          79920   937502
+2019-08-01 09:12:27,027 - INFO - Writing these stats to ./results/codoncounts/lib3-cell_bcstats.csv
+
+2019-08-01 09:12:27,066 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/lib3-cell_codoncounts.csv
+
+2019-08-01 09:12:27,108 - INFO - Successful completion of dms2_bcsubamp
